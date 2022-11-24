@@ -1,0 +1,64 @@
+<?php //App%255CEntity%255CUser%2524nickname
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+        clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'type' => [
+                'string',
+            ],
+            'length' => [
+                50,
+            ],
+            'precision' => [
+                null,
+            ],
+            'scale' => [
+                null,
+            ],
+            'unique' => [
+                true,
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                ],
+                [
+                    'Default',
+                ],
+            ],
+            'maxMessage' => [
+                2 => 'Le pseudo ne doit pas faire plus de {{ limit }} caractères !',
+            ],
+            'minMessage' => [
+                2 => 'Le pseudo doit faire au moins {{ limit }} caractères !',
+            ],
+            'max' => [
+                2 => 50,
+            ],
+            'min' => [
+                2 => 3,
+            ],
+        ],
+        'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+            'groups' => [
+                3 => [
+                    'app_user',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+    ],
+    []
+); }];
